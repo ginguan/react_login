@@ -110,7 +110,7 @@ class Register extends Component {
     const data = new FormData();
     data.append('file',e.target.files[0]);
     data.append('upload_preset','userProfile');
-    data.append("cloud_name","dvqqs4tl5");
+    data.append("cloud_name","<your_cloud>");
     //https://cloudinary.com/ image cloud
     
     fetch("https://api.cloudinary.com/v1_1/<your_cloud>/image/upload",{
