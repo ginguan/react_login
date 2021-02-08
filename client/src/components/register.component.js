@@ -112,8 +112,8 @@ class Register extends Component {
     data.append('upload_preset','userProfile');
     data.append("cloud_name","dvqqs4tl5");
     //https://cloudinary.com/ image cloud
-    //CLOUDINARY_URL=cloudinary://329668951359153:y_WmEk_Gfq8sYQNjkWhofw4e2Tk@dvqqs4tl5
-    fetch("https://api.cloudinary.com/v1_1/dvqqs4tl5/image/upload",{
+    
+    fetch("https://api.cloudinary.com/v1_1/<your_cloud>/image/upload",{
         method:"post",
         body:data
     }).then(res=>res.json()).
