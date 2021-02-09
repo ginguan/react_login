@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 const db = require("./app/models");
 const Role = db.role;
-const mongoUrl = "mongodb+srv://outsider:5RktX3fnUgKmYdDm@cluster0.jjk9p.mongodb.net/user?retryWrites=true&w=majority";
+const mongoUrl = "mongodb+srv://outsider:<Youe_key>@cluster0.<your_database>.mongodb.net/user?retryWrites=true&w=majority";
 db.mongoose
     .connect(mongoUrl, {
     useNewUrlParser: true,
